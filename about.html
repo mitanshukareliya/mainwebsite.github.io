@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .ab1 {
+            text-align: center;
+            width: 30%;
+        }
+
+        .ab2 {
+            text-align: center;
+            width: 30%;
+        }
+
+        .main {
+            display: flex;
+            width: 100%;
+            height: 450px;
+            margin-top: 80px;
+
+        }
+
+        .ab1 h1 {
+            font-size: 25px;
+            color: rgb(58, 1, 1);
+        }
+
+        .ab1 h2 {
+            font-size: 20px;
+            margin-top: 20px;
+            color: rgb(15, 61, 61);
+            padding: 10px;
+        }
+
+        .ab1 button {
+            width: 100px;
+            height: 30px;
+            background-color: bisque;
+            color: black;
+            margin-top: 20px;
+        }
+
+        .ab1 {
+            margin-left: 150px;
+            border: 1px solid lightcoral;
+            width: 35%;
+            height: 350px;
+            box-shadow: 5px 8px 8px 1px rgb(96, 128, 139);
+        }
+
+        .ab2 {
+            margin-left: 150px;
+            box-shadow: 5px 8px 8px 1px rgb(96, 128, 139);
+            border: 1px solid lightcoral;
+            width: 35%;
+            height: 350px;
+        }
+
+        .ab2 h1 {
+            font-size: 25px;
+            color: rgb(58, 1, 1);
+        }
+
+        .ab2 h2 {
+            font-size: 20px;
+            margin-top: 20px;
+            color: rgb(15, 61, 61);
+            padding: 10px;
+        }
+
+        .ab2 button {
+            width: 100px;
+            height: 30px;
+            background-color: bisque;
+            color: black;
+            margin-top: 20px;
+        }
+
+        .text {
+            width: 40%;
+            margin-left: 400px;
+            border: 1px solid lightcoral;
+            width: 40%;
+            box-shadow: 5px 8px 8px 1px rgb(96, 128, 139);
+            height: 350px;
+            padding: 15px;
+
+        }
+
+        .text h1 {
+            font-size: 22px;
+            text-align: center;
+            margin-top: 30px;
+            color: rgb(15, 66, 66);
+        }
+
+        @media(max-width:976px) {
+            .main {
+                width: 100%;
+                height: 800px;
+                flex-wrap: wrap;
+                margin-left: 0px;
+            }
+
+            .ab1 {
+                width: 65%;
+                height: 300px;
+
+            }
+
+            .ab2 {
+                width: 65%;
+                height: 300px;
+            }
+
+            .text {
+                margin-left: 150px;
+                width: 65%;
+                height: 330px;
+            }
+
+            .text h1 {
+                margin-top: 50px;
+            }
+
+        }
+
+        @media(max-width:740px) {
+            .text {
+                width: 65%;
+                height: 430px;
+                margin-left: 110px;
+            }
+
+            .ab1 {
+                margin-left: 110px;
+            }
+
+            .ab2 {
+                margin-left: 110px;
+            }
+        }
+
+        @media(max-width:576px) {
+            .ab1 {
+                width: 65%;
+                height: 350px;
+                margin-left: 80px;
+
+            }
+
+            .ab2 {
+                width: 65%;
+                height: 350px;
+                margin-left: 80px;
+
+            }
+
+            .text {
+                width: 65%;
+                margin-left: 80px;
+                height: 450px;
+            }
+
+            .text h1 {
+                font-size: 20px;
+            }
+        }
+
+        @media(max-width:470px) {
+            .ab1 {
+                width: 65%;
+                height: 350px;
+            }
+
+            .ab1 h2 {
+                font-size: 17px;
+            }
+
+            .ab2 {
+                width: 65%;
+                height: 350px;
+            }
+
+            .ab2 h2 {
+                font-size: 17px;
+            }
+
+            .text {
+                width: 65%;
+                /* margin-left: 80px; */
+                height: 400px;
+                margin-top: 0px;
+            }
+
+            .text h1 {
+                font-size: 18px;
+                margin-top: 25px;
+
+            }
+        }
+
+        @media(max-width:400px) {
+            .ab1 {
+                width: 75%;
+                margin-left: 45px;
+            }
+
+            .ab2 {
+                width: 75%;
+                margin-left: 45px;
+            }
+
+            .text {
+                width: 75%;
+                margin-left: 45px;
+            }
+
+            .text h1 {
+                font-size: 17px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="RedStore_Img/images/logo.png" alt="">
+        </div>
+        <div class="nav">
+
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <div class="container" onclick="mydunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </label>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="products.html">PRODUCTS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="#">ACCOUNT</a></li>
+
+            </ul>
+        </div>
+    </header>
+    <script>
+        function mydunction(z) {
+            z.classList.toggle("a");
+        }
+    </script>
+    <!------------------------------------------- headr is cloased ------------------------------------>
+
+    <div class="main">
+        <div class="ab1">
+            <h1>Smarter <br> recovery</h1>
+            <h2>Redstor’s proprietary InstantData™ technology enables recovering entire systems in moments, with a
+                seamless user experience that allows users to get back to work almost instantly, streaming what they
+                need, when they need it.</h2>
+            <button>see more</button>
+        </div>
+        <div class="ab2">
+            <h1>Smarter <br> management</h1>
+            <h2>Smarter backup, including the broadest coverage of data sources, through a single app, able to be set up
+                in under 60 seconds. Save time, hassle and costs with no hardware requirement and the ability to manage
+                everything centrally, from anywhere.</h2>
+            <button>see more</button>
+        </div>
+
+
+    </div>
+
+    <!---------------------------------------- main is closed --------------------------------------------->
+
+    <div class="text">
+        <h1>Rated #1 on G2 in 16 categories, including backup, online backup, DR and DRaaS
+            G2 icon
+            G2 High Performer
+            G2 Momentum Leader
+            G2 Leader
+            Logo Users Love Us
+            G2 Leader Small Business
+
+            G2 Leader Enterprise
+            The console is intuitive and the multi-tenancy within that is easy to use and navigate. The restore process
+            is quick and easy and works flawlessly.
+
+            I like the fact that the software just runs. There’s never a question for me that my backups are safe.
+
+        </h1>
+    </div>
+    <!---------------------------------------- text is closed ------------------------------------------->
+
+
+    <div class="section10">
+        <div class="sec10_1">
+            <h1>Dowanload Our App</h1> <br>
+            <p>Dowanload App For Android and Ios mobile phone </p> <br>
+            <img src="RedStore_Img/images/play-store.png" alt="">
+            <img src="RedStore_Img/images/app-store.png" alt="">
+        </div>
+
+        <div class="sec10_2">
+            <img src="RedStore_Img/images/logo.png" alt=""> <br>
+            <p>Our PurPose is to sustainaly make the masure and <br> banefit of sports accossiable to the many.</p>
+        </div>
+
+        <div class="sec10_3">
+            <h2>UseFull Links</h2>
+            <p>coupans</p>
+            <p>Blog Post</p>
+            <p>Return Policy</p>
+            <p>join noww</p>
+        </div>
+
+        <div class="sec10_4">
+            <h2>Follow Us</h2>
+            <p>Facebook</p>
+            <p>Instagram</p>
+            <p>Youtube</p>
+            <p>twitter</p>
+        </div>
+    </div>
+    <!-------------------------------------------- section10 is closed --------------------------------------->
+
+    <footer>
+        <h2>
+            <marquee> &#169;all rights reserved||designned by MITANSHU
+        </h2>
+        </marquee>
+    </footer>
+
+    <!-------------------------------------------- footer is closed ---------------------------------------->
+</body>
+
+</html>
